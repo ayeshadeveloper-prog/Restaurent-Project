@@ -1,0 +1,145 @@
+.contact-section {
+  padding: 76px 7% 84px;
+  background: #fbf7f0;
+}
+
+.contact-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 40px;
+}
+
+.contact-heading__eyebrow {
+  color: #b87932;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+}
+
+.contact-heading h2 {
+  margin: 12px 0;
+  color: #35281e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 600;
+}
+
+.contact-heading h2 span {
+  color: #bd7d36;
+  font-size: inherit;
+  letter-spacing: normal;
+}
+
+.contact-heading p {
+  margin: 0;
+  color: #75695f;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid #efe5d8;
+  border-radius: 14px;
+  background: #fffdfa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(77, 52, 28, 0.08);
+}
+
+.contact-icon {
+  display: flex;
+  min-width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #f7ead8;
+  color: #ad6d2d;
+  font-size: 22px;
+}
+
+.contact-card-content h3 {
+  margin: 2px 0 8px;
+  color: #45372c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.contact-card-content h4 {
+  margin: 0 0 6px;
+  color: #a9682d;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.contact-card-content p {
+  margin: 0;
+  color: #81766d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.contact-map {
+  height: 340px;
+  margin-top: 32px;
+  overflow: hidden;
+  border: 1px solid #efe5d8;
+  border-radius: 14px;
+  background: #eee8df;
+}
+
+.contact-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 5%;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    gap: 14px;
+    padding: 19px;
+  }
+
+  .contact-icon {
+    min-width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .contact-map {
+    height: 280px;
+    margin-top: 24px;
+  }
+}
+
+

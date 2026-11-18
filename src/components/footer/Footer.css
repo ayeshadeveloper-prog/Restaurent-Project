@@ -1,0 +1,110 @@
+
+/* Footer Headings */
+.footer-heading {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.footer-links a {
+  color: #c5cbc6;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #16a36a;
+}
+
+/* Newsletter Input */
+.footer-input {
+  background: #102a4b;
+  border: 1px solid #37506d;
+  color: white;
+}
+
+.footer-input::placeholder {
+  color: #b5bdb7;
+}
+
+.footer-input:focus {
+  border-color: #16a36a;
+}
+
+/* Subscribe Button */
+.footer-subscribe-btn {
+  background: #16a36a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.footer-subscribe-btn:hover {
+  background: #128252;
+}
+
+/* Contact Icons */
+.footer-contact-icon {
+  color: #16a36a;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.footer-contact-link {
+  color: #c5cbc6;
+  text-decoration: none;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact-link:hover {
+  color: #16a36a;
+}
+
+/* Social Icons */
+.footer-social {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #102a4b;
+  border: 1px solid #37506d;
+  font-size: 19px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-social:hover {
+  background: #16a36a;
+  border-color: #16a36a;
+  color: white;
+}
+
+/* Bottom Links */
+.footer-bottom-link {
+  color: #bfc8c1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-link:hover {
+  color: #16a36a;
+}
+
+

@@ -1,0 +1,27 @@
+.section-button-wrap {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.section-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border: 2px solid #16a36a;
+  border-radius: 9px;
+  color: #16a36a;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.section-button:hover {
+  background: #16a36a;
+  color: #fff;
+}
+
+.section-button:focus-visible {
+  outline: 3px solid #16a36a;
+  outline-offset: 3px;
+}

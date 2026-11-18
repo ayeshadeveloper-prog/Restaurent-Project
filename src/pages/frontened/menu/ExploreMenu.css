@@ -1,0 +1,74 @@
+
+.explore-menu-section {
+  background-color: #f8faf9;
+}
+
+/* Search Input */
+
+.explore-search.ant-input-affix-wrapper {
+  min-height: 54px;
+  padding: 0 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.explore-search.ant-input-affix-wrapper:hover {
+  border-color: #16a36a;
+}
+
+.explore-search.ant-input-affix-wrapper-focused {
+  border-color: #16a36a;
+  box-shadow: 0 0 0 2px rgba(22, 163, 106, 0.12);
+}
+
+.explore-search .ant-input {
+  font-size: 14px;
+  background: transparent;
+}
+
+.explore-search .ant-input::placeholder {
+  color: #a5a29b;
+}
+
+/* Category Buttons */
+
+.category-btn {
+  cursor: pointer;
+  outline: none;
+}
+
+.category-btn:focus-visible {
+  outline: 2px solid #16a36a;
+  outline-offset: 3px;
+}
+
+/* Product Images */
+
+.explore-menu-section article img {
+  transition: none;
+}
+
+/* Responsive */
+
+@media (max-width: 640px) {
+  .explore-menu-section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .explore-search.ant-input-affix-wrapper {
+    min-height: 50px;
+  }
+
+  .category-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
+
+
+
+

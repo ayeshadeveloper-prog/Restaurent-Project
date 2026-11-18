@@ -1,0 +1,124 @@
+.contact-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: clamp(440px, 65vh, 660px);
+  align-items: center;
+  overflow: hidden;
+  padding: clamp(64px, 8vw, 120px);
+  background: #10100d;
+}
+
+.contact-hero::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(10, 10, 7, 0.96) 0%,
+    rgba(10, 10, 7, 0.82) 35%,
+    rgba(10, 10, 7, 0.35) 68%,
+    rgba(10, 10, 7, 0.08) 100%
+  );
+  content: "";
+}
+
+.contact-hero__image {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+}
+
+.contact-hero__content {
+  width: min(100%, 760px);
+  color: #fff;
+}
+
+.contact-hero__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: #e8b44c;
+}
+
+.contact-hero__brand .anticon {
+  font-size: 34px;
+}
+
+.contact-hero__brand span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.contact-hero__eyebrow {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 10px;
+  color: #e8b44c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 2vw, 30px);
+  letter-spacing: 0.04em;
+}
+
+.contact-hero__eyebrow::before,
+.contact-hero__eyebrow::after {
+  width: clamp(32px, 7vw, 100px);
+  height: 1px;
+  background: #e8b44c;
+  content: "";
+}
+
+.contact-hero__title {
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 8vw, 112px);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.contact-hero__title span {
+  color: #e8b44c;
+}
+
+.contact-hero__description {
+  max-width: 610px;
+  margin: 22px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .contact-hero {
+    min-height: 500px;
+    padding: 64px 24px;
+  }
+
+  .contact-hero::after {
+    background: linear-gradient(
+      90deg,
+      rgba(10, 10, 7, 0.9),
+      rgba(10, 10, 7, 0.58)
+    );
+  }
+
+  .contact-hero__title {
+    font-size: clamp(58px, 14vw, 82px);
+  }
+
+  .contact-hero__description {
+    margin-top: 18px;
+  }
+}

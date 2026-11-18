@@ -1,0 +1,34 @@
+
+/* Chef Cards */
+.chef-card {
+  height: 440px;
+  background: #0a1f3d;
+}
+
+/* Chef Image */
+.chef-card img {
+  transition: transform 0.5s ease;
+}
+
+/* Image Hover */
+.chef-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Image Overlay */
+.chef-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(10, 31, 61, 0.95) 0%,
+    rgba(10, 31, 61, 0.55) 45%,
+    rgba(10, 31, 61, 0.05) 100%
+  );
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .chef-card {
+    height: 420px;
+  }
+}
+

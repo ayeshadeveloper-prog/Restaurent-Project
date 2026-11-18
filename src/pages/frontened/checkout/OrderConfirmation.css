@@ -1,0 +1,27 @@
+.order-confirmation__hero {
+  background: linear-gradient(135deg, #254b3c 0%, #365f52 100%);
+}
+
+.order-confirmation__circle {
+  position: absolute;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.order-confirmation__circle--one {
+  top: -5rem;
+  right: -4rem;
+  width: 13rem;
+  height: 13rem;
+  border-width: 25px;
+}
+
+.order-confirmation__circle--two {
+  bottom: -6rem;
+  left: -4rem;
+  width: 14rem;
+  height: 14rem;
+  border-width: 30px;
+}

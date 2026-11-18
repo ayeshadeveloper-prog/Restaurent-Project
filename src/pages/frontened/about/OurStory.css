@@ -1,0 +1,404 @@
+
+/* MAIN SECTION */
+
+.our-story {
+  background: #f7faf8;
+  padding: 80px 6%;
+  overflow: hidden;
+}
+
+.our-story-container {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+}
+
+/* IMAGE COLLAGE */
+
+.story-images {
+  position: relative;
+  min-height: 530px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.story-image-back {
+  position: absolute;
+  width: 75%;
+  height: 85%;
+  top: 25px;
+  left: 35px;
+  border: 2px solid #16a36a;
+  border-radius: 12px;
+}
+
+.story-main-image {
+  position: absolute;
+  width: 75%;
+  height: 400px;
+  top: 55px;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.story-main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-top-image {
+  position: absolute;
+  width: 47%;
+  height: 190px;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  border: 7px solid #f7faf8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.story-top-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-bottom-image {
+  position: absolute;
+  width: 48%;
+  height: 190px;
+  bottom: 0;
+  right: 5px;
+  z-index: 3;
+  border: 7px solid #f7faf8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.story-bottom-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* IMAGE BADGE */
+
+.story-image-badge {
+  position: absolute;
+  z-index: 4;
+  left: -20px;
+  bottom: 55px;
+  background: #16a36a;
+  color: white;
+  padding: 15px 22px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(10, 31, 61, 0.18);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* STORY CONTENT */
+
+.story-content {
+  padding: 20px 0;
+}
+
+.story-label {
+  color: #16a36a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.story-label span {
+  width: 28px;
+  height: 2px;
+  background: #16a36a;
+}
+
+.story-content h2 {
+  color: #0a1f3d;
+  font-size: clamp(35px, 4vw, 49px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.story-content h2 span {
+  color: #16a36a;
+}
+
+.story-description {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+/* HIGHLIGHT */
+
+.story-highlight {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  margin: 28px 0;
+}
+
+.highlight-line {
+  min-width: 4px;
+  background: #16a36a;
+  border-radius: 5px;
+}
+
+.story-highlight p {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* BUTTON */
+
+.story-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #16a36a;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.story-btn:hover {
+  background: #0a1f3d;
+  color: white;
+}
+
+/* STORY CARDS SECTION */
+
+.story-cards-section {
+  max-width: 1250px;
+  margin: 88px auto 0;
+}
+
+.story-cards-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.story-cards-heading > span {
+  color: #16a36a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.story-cards-heading h3 {
+  color: #0a1f3d;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+.story-cards-heading h3 span {
+  color: #16a36a;
+}
+
+/* CARDS GRID */
+
+.story-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* SINGLE CARD */
+
+.story-card {
+  background: #ffffff;
+  padding: 34px 30px;
+  border: 1px solid rgba(22, 163, 106, 0.16);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(10, 31, 61, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.story-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, #16a36a, #0a1f3d);
+}
+
+.story-card:hover {
+  border-color: #16a36a;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(10, 31, 61, 0.12);
+}
+
+.story-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 27px;
+}
+
+.story-card-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e8f5ee;
+  color: #16a36a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  box-shadow: 0 6px 14px rgba(22, 163, 106, 0.12);
+}
+
+.story-card h4 {
+  font-size: 21px;
+  font-weight: 750;
+  color: #0a1f3d;
+  margin-bottom: 15px;
+}
+
+.story-card p {
+  flex: 1;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.9;
+  margin: 0;
+}
+
+.story-card-line {
+  width: 45px;
+  height: 3px;
+  background: #16a36a;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+  .our-story-container {
+    gap: 45px;
+  }
+
+  .story-images {
+    min-height: 450px;
+  }
+
+  .story-main-image {
+    height: 340px;
+  }
+
+  .story-top-image,
+  .story-bottom-image {
+    height: 155px;
+  }
+
+  .story-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .our-story {
+    padding: 56px 5%;
+  }
+
+  .our-story-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .story-images {
+    max-width: 500px;
+    min-height: 430px;
+    margin: auto;
+  }
+
+  .story-content {
+    padding-top: 10px;
+  }
+
+  .story-content h2 {
+    font-size: 37px;
+  }
+
+  .story-cards-section {
+    margin-top: 64px;
+  }
+
+  .story-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .story-images {
+    min-height: 340px;
+  }
+
+  .story-main-image {
+    height: 270px;
+    width: 80%;
+  }
+
+  .story-top-image {
+    width: 48%;
+    height: 125px;
+  }
+
+  .story-bottom-image {
+    width: 48%;
+    height: 125px;
+  }
+
+  .story-image-badge {
+    left: -5px;
+    bottom: 35px;
+    padding: 12px 14px;
+    font-size: 11px;
+  }
+
+  .story-content h2 {
+    font-size: 32px;
+  }
+
+  .story-card {
+    padding: 28px 24px;
+  }
+}
+

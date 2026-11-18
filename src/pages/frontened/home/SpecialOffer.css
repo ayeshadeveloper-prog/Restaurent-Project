@@ -1,0 +1,266 @@
+
+/* Main Section */
+.special-offers-section {
+  padding: 76px 6%;
+  background: #f8faf9;
+}
+
+/* Section Heading */
+.special-offers-heading {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.offers-subtitle {
+  color: #16a36a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.special-offers-heading h2 {
+  color: #0a1f3d;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.special-offers-heading p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* Main Offer Banner */
+.main-offer-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: #0a1f3d;
+  border-radius: 22px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  min-height: 350px;
+}
+
+.main-offer-content {
+  padding: 40px;
+  color: white;
+}
+
+.main-offer-tag {
+  display: inline-block;
+  background: #16a36a;
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.main-offer-content h2 {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 20px 0 12px;
+}
+
+.main-offer-content h2 span {
+  color: #16a36a;
+}
+
+.main-offer-content p {
+  color: #d1d5db;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  max-width: 430px;
+}
+
+.main-offer-button {
+  display: inline-block;
+  background: #16a36a;
+  color: white;
+  text-decoration: none;
+  padding: 13px 27px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.main-offer-button:hover {
+  background: white;
+  color: #0a1f3d;
+}
+
+.main-offer-image {
+  height: 100%;
+  min-height: 350px;
+  overflow: hidden;
+}
+
+.main-offer-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.main-offer-banner:hover .main-offer-image img {
+  transform: scale(1.05);
+}
+
+/* Small Offer Cards */
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.offer-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-8px);
+  border-color: #16a36a;
+  box-shadow: 0 12px 30px rgba(22, 163, 106, 0.13);
+}
+
+.offer-card-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.offer-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.offer-card:hover .offer-card-image img {
+  transform: scale(1.07);
+}
+
+.offer-discount {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #16a36a;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.offer-card-content {
+  padding: 22px;
+}
+
+.offer-card-content h3 {
+  color: #0a1f3d;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.offer-card-content p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.offer-price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.new-price {
+  color: #16a36a;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.old-price {
+  color: #94a3b8;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+.offer-button {
+  display: block;
+  text-align: center;
+  background: #16a36a;
+  color: white;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.offer-button:hover {
+  background: #0a1f3d;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .special-offers-section {
+    padding: 56px 5%;
+  }
+
+  .main-offer-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .main-offer-content {
+    padding: 28px;
+  }
+
+  .main-offer-content h2 {
+    font-size: 32px;
+  }
+
+  .main-offer-image {
+    min-height: 250px;
+  }
+
+  .main-offer-image img {
+    min-height: 250px;
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .special-offers-heading h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .special-offers-section {
+    padding: 48px 5%;
+  }
+
+  .main-offer-content h2 {
+    font-size: 27px;
+  }
+
+  .main-offer-content {
+    padding: 24px 20px;
+  }
+}
+
+
+

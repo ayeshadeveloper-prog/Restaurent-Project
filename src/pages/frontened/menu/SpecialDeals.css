@@ -1,0 +1,148 @@
+
+
+
+
+
+
+
+
+.special-deals-section {
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 10% 10%, rgba(22, 163, 106, 0.08), transparent 34%),
+    #f8faf9;
+}
+
+.special-deals-eyebrow {
+  color: #16a36a;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.special-deals-heading h2 {
+  color: #0a1f3d;
+  line-height: 1.2;
+}
+
+.special-deals-heading h2 span {
+  color: #16a36a;
+}
+
+.special-deals-heading > p {
+  color: #64748b;
+}
+
+.special-deal-card.ant-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(10, 31, 61, 0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.special-deal-card.ant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 42px rgba(10, 31, 61, 0.13);
+}
+
+.special-deal-card .ant-card-cover {
+  margin: 0;
+  flex: none;
+}
+
+.special-deal-card .ant-card-body {
+  flex: 1;
+  padding: 18px;
+}
+
+.special-deal-card__image-wrap {
+  position: relative;
+  height: 185px;
+  overflow: hidden;
+  background: #e9f8ef;
+}
+
+.special-deal-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.special-deal-card:hover .special-deal-card__image {
+  transform: scale(1.05);
+}
+
+.special-deal-card__badge.ant-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  margin: 0;
+  padding: 5px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: #16a36a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.special-deal-card__eyebrow {
+  margin: 0 0 8px;
+  color: #16a36a;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.special-deal-card__title {
+  margin: 0;
+  color: #0a1f3d;
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.special-deal-card__description {
+  min-height: 42px;
+  margin: 8px 0 12px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.special-deal-card__prices {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.special-deal-card__prices strong {
+  color: #16a36a;
+  font-size: 19px;
+}
+
+.special-deal-card__prices del {
+  color: #94897e;
+  font-size: 14px;
+}
+
+@media (max-width: 575px) {
+  .special-deal-card .ant-card-body {
+    padding: 16px;
+  }
+
+  .special-deal-card__image-wrap {
+    height: 165px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .special-deal-card.ant-card,
+  .special-deal-card__image {
+    transition: none;
+  }
+}

@@ -1,0 +1,32 @@
+.customer-information__input.ant-input-affix-wrapper {
+  min-height: 50px;
+  border: 1px solid #dbe3dd;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.customer-information__input.ant-input-affix-wrapper:hover {
+  border-color: #16a36a;
+}
+
+.customer-information__input.ant-input-affix-wrapper:focus,
+.customer-information__input.ant-input-affix-wrapper-focused {
+  border-color: #16a36a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 106, 0.12);
+}
+
+.customer-information__input .ant-input {
+  color: #0a1f3d;
+}
+
+.customer-information__input .ant-input::placeholder {
+  color: #94a3b8;
+}
+
+@media (max-width: 767px) {
+  .customer-information__form .ant-form-item {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,155 @@
+
+/* CTA Main Section */
+.cta-section {
+  width: 100%;
+  min-height: 430px;
+  background-image: url("../../../assets/CTA-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Dark Overlay */
+.cta-overlay {
+  width: 100%;
+  min-height: 430px;
+  background: rgba(10, 31, 61, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+}
+
+/* CTA Content */
+.cta-content {
+  max-width: 750px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta-subtitle {
+  display: inline-block;
+  color: #16a36a;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.cta-content h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.cta-content h2 span {
+  color: #16a36a;
+}
+
+.cta-content p {
+  color: #e2e8f0;
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 620px;
+  margin: 0 auto 30px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cta-primary-btn,
+.cta-secondary-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.cta-primary-btn {
+  background: #16a36a;
+  color: #ffffff;
+  border: 2px solid #16a36a;
+}
+
+.cta-primary-btn:hover {
+  background: #ffffff;
+  color: #0a1f3d;
+  border-color: #ffffff;
+}
+
+/* Secondary Button */
+.cta-secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.cta-secondary-btn:hover {
+  background: #ffffff;
+  color: #0a1f3d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cta-section,
+  .cta-overlay {
+    min-height: 400px;
+  }
+
+  .cta-content h2 {
+    font-size: 36px;
+  }
+
+  .cta-overlay {
+    padding: 56px 20px;
+  }
+
+  .cta-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section,
+  .cta-overlay {
+    min-height: 380px;
+  }
+
+  .cta-content h2 {
+    font-size: 29px;
+  }
+
+  .cta-overlay {
+    padding: 48px 18px;
+  }
+
+  .cta-subtitle {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cta-primary-btn,
+  .cta-secondary-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
